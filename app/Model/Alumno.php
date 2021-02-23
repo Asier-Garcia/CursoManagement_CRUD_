@@ -26,6 +26,19 @@ class Alumno extends AppModel{
         ], 
 
     );
+
+    public $hasAndBelongsToMany = [
+        'Curso' => [
+            'className' => 'Curso',
+            'foreignKey' => 'alumno_id',
+            'conditions' => '', 
+            'order' => 'Curso.fecha_inicio ASC', 
+            'depend' => false
+
+        ]
+    ];
+
+
 }
 
 ?>

@@ -4,9 +4,9 @@ class AlumnosController extends AppController{
 
     public function index(){ //se las llama acciones
         //en la variable alumnos guarda todos los registros de la tabla alumno
-		
+		$this->Alumno->recursive = 1;
         $alumnos = $this->Alumno->find('all');
-		//var_dump($alumnos);
+		
         $this->set('alumnos', $alumnos);
         
     }
