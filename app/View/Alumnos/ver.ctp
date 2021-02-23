@@ -10,6 +10,9 @@
     <strong>Tfno: </strong><?php echo $alumno['Alumno']['telefono'];?> 
 </p>
 <p>
+    <strong>E-mail: </strong><?php echo $alumno['Alumno']['email'];?> 
+</p>
+<p>
     <strong>Fecha de creacción: </strong><?php echo $this->Time->format('d-m-Y ; h:i A', $alumno['Alumno']['created']);?> 
 </p>
 

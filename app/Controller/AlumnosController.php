@@ -6,7 +6,8 @@ class AlumnosController extends AppController{
         //en la variable alumnos guarda todos los registros de la tabla alumno
 		
         $alumnos = $this->Alumno->find('all');
-        $this->set('Alumnos', $alumnos);
+		//var_dump($alumnos);
+        $this->set('alumnos', $alumnos);
         
     }
 
@@ -21,7 +22,7 @@ class AlumnosController extends AppController{
             throw new NotFoundException('Ese alumno no existe');
         }
 
-        $this-> set('Alumno', $alumno);
+        $this-> set('alumno', $alumno);
 
     }
 
