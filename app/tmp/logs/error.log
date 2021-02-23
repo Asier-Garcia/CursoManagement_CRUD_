@@ -1,0 +1,9 @@
+2021-02-23 12:31:03 Error: [MissingControllerException] Controller class AlumnosController could not be found.
+Exception Attributes: array (
+  'class' => 'AlumnosController',
+  'plugin' => NULL,
+)
+Request URL: /Asier/cakephp-2.10.24/alumnos
+Stack Trace:
+#0 C:\xampp\htdocs\Asier\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
