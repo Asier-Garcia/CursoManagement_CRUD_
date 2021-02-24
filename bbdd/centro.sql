@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-02-2021 a las 20:44:57
--- Versión del servidor: 10.4.11-MariaDB
--- Versión de PHP: 7.2.28
+-- Tiempo de generación: 24-02-2021 a las 13:45:38
+-- Versión del servidor: 10.4.17-MariaDB
+-- Versión de PHP: 7.3.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -98,6 +97,28 @@ INSERT INTO `cursos` (`id`, `dificultad`, `descripcion`, `horas`, `fecha_inicio`
 (2, 'difícil', 'Latin', 12, '2021-03-01 18:17:53', '2021-03-24 18:17:53'),
 (3, 'Muy fácil', 'Informática', 30, '2021-02-27 19:08:26', '2021-03-02 19:08:26');
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL,
+  `username` varchar(20) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `role` varchar(20) NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modifed` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `username`, `password`, `role`, `created`, `modifed`) VALUES
+(1, 'admin', '1234', 'admin', '2021-02-24 13:03:12', NULL);
+
 --
 -- Índices para tablas volcadas
 --
@@ -115,6 +136,12 @@ ALTER TABLE `cursos`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -129,6 +156,12 @@ ALTER TABLE `alumnos`
 --
 ALTER TABLE `cursos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
