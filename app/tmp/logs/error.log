@@ -18,3 +18,134 @@ Stack Trace:
 #1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
 #2 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2021-02-24 10:47:13 Error: [MissingTableException] Table alumnos_cursos for model AlumnosCurso was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'alumnos_cursos',
+  'class' => 'AlumnosCurso',
+  'ds' => 'default',
+)
+Request URL: /Asier/Curso_Management/
+Stack Trace:
+#0 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Model\Model.php(3686): Model->setSource('alumnos_cursos')
+#1 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Model\Model.php(1394): Model->getDataSource()
+#2 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Model\Model.php(898): Model->schema()
+#3 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Model\Model.php(926): Model->__isset('AlumnosCurso')
+#4 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Model\Model.php(3762): Model->__get('AlumnosCurso')
+#5 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(1908): Model->joinModel('AlumnosCurso', Array)
+#6 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(1377): DboSource->generateAssociationQuery(Object(Alumno), Object(Curso), 'hasAndBelongsTo...', 'Curso', Array, Array, true)
+#7 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(1257): DboSource->queryAssociation(Object(Alumno), Object(Curso), 'hasAndBelongsTo...', 'Curso', Array, Array, true, Array, 0, Array)
+#8 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Model\Model.php(3053): DboSource->read(Object(Alumno), Array)
+#9 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Model\Model.php(3025): Model->_readDataSource('all', Array)
+#10 C:\xampp\htdocs\Asier\Curso_Management\app\Controller\AlumnosController.php(8): Model->find('all')
+#11 [internal function]: AlumnosController->index()
+#12 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(AlumnosController), Array)
+#13 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
+#15 C:\xampp\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2021-02-24 11:04:11 Error: [ParseError] syntax error, unexpected ''Html'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+Request URL: /Asier/Curso_Management/cursos
+Stack Trace:
+#0 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#3 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#4 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#5 C:\xampp\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-02-24 11:06:36 Error: [MissingViewException] View file "Cursos\editar.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Cursos\\editar.ctp',
+)
+Request URL: /Asier/Curso_Management/Cursos/editar
+Stack Trace:
+#0 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\View\View.php(470): View->_getViewFileName('Cursos\\editar')
+#1 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 13:08:01 Error: [MissingControllerException] Controller class UsuariosController could not be found.
+Exception Attributes: array (
+  'class' => 'UsuariosController',
+  'plugin' => NULL,
+)
+Request URL: /Asier/Curso_Management/usuarios
+Stack Trace:
+#0 C:\xampp\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-02-24 13:08:21 Error: Fatal Error (64): Cannot declare class User, because the name is already in use in [C:\xampp\htdocs\Asier\Curso_Management\app\Model\Usuario.php, line 26]
+2021-02-24 13:08:21 Error: [FatalErrorException] Cannot declare class User, because the name is already in use
+Request URL: /Asier/Curso_Management/usuarios
+Stack Trace:
+#0 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot declare ...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Core\App.php(970): ErrorHandler::handleError(64, 'Cannot declare ...', 'C:\\xampp\\htdocs...', 26, Array)
+#2 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2021-02-24 13:08:57 Error: Fatal Error (64): Cannot declare class User, because the name is already in use in [C:\xampp\htdocs\Asier\Curso_Management\app\Model\Usuario.php, line 26]
+2021-02-24 13:08:57 Error: [FatalErrorException] Cannot declare class User, because the name is already in use
+Request URL: /Asier/Curso_Management/usuarios
+Stack Trace:
+#0 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot declare ...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Core\App.php(970): ErrorHandler::handleError(64, 'Cannot declare ...', 'C:\\xampp\\htdocs...', 26, Array)
+#2 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2021-02-24 13:10:34 Error: [ParseError] syntax error, unexpected ','
+Request URL: /Asier/Curso_Management/usuarios
+Stack Trace:
+#0 [internal function]: App::load('UsuariosControl...')
+#1 [internal function]: spl_autoload_call('UsuariosControl...')
+#2 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsuariosControl...')
+#3 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-02-24 13:10:49 Error: Fatal Error (64): Cannot declare class User, because the name is already in use in [C:\xampp\htdocs\Asier\Curso_Management\app\Model\Usuario.php, line 26]
+2021-02-24 13:10:49 Error: [FatalErrorException] Cannot declare class User, because the name is already in use
+Request URL: /Asier/Curso_Management/usuarios
+Stack Trace:
+#0 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot declare ...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Core\App.php(970): ErrorHandler::handleError(64, 'Cannot declare ...', 'C:\\xampp\\htdocs...', 26, Array)
+#2 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2021-02-24 13:22:16 Error: [Error] Call to a member function login() on null
+Request URL: /Asier/Curso_Management/usuarios
+Stack Trace:
+#0 [internal function]: UsuariosController->index()
+#1 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#2 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 13:22:21 Error: [Error] Call to a member function login() on null
+Request URL: /Asier/Curso_Management/usuarios
+Stack Trace:
+#0 [internal function]: UsuariosController->index()
+#1 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#2 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 13:26:03 Error: [ParseError] syntax error, unexpected ';', expecting ')'
+Request URL: /Asier/Curso_Management/usuarios
+Stack Trace:
+#0 [internal function]: App::load('UsuariosControl...')
+#1 [internal function]: spl_autoload_call('UsuariosControl...')
+#2 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsuariosControl...')
+#3 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-02-24 13:26:20 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /Asier/Curso_Management/usuarios
+Stack Trace:
+#0 [internal function]: App::load('UsuariosControl...')
+#1 [internal function]: spl_autoload_call('UsuariosControl...')
+#2 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsuariosControl...')
+#3 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
