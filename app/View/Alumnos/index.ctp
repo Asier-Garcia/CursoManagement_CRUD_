@@ -1,3 +1,17 @@
+<!--
+
+- Si se añade un alumno a un curso que ya se ha añadido previamente en otro curso, con el
+mismo dni, se debe recuperar su información y permitir modificar algún dato en su caso
+(modificar el email, por ejemplo). 
+
+- Cuando el curso finaliza (según su fecha de fin) se debe poder marcar que ha entregado la
+documentación para la evaluación, y además poder indicar el resultado (no apto, aprobado).
+
+- El acceso a este administrador debe estar protegido por usuario y contraseña. El propio
+usuario debe poder modificar su contraseña de acceso.
+
+-->
+
 <h2>Lista de alumnos</h2>
 <?php 
     echo $this->Html->link("Crear Alumno", array('controller' => 'alumnos', 'action' => 'nuevo' ));

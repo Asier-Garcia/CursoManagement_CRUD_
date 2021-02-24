@@ -7,8 +7,9 @@
     <td>Fecha inicio</td>
     <td>Fecha fin</td>
     <td>Alumnos</td>
+	<td>Acciones</td>
 </tr>
-   
+
 <?php 
 
     foreach($cursos as $curso){ ?>
@@ -26,6 +27,14 @@
                 
         ?>
         </td>
+		<td>
+		
+			<?php echo $this->Html->link("Editar", ["controller" => "cursos", "action" => "editar", $curso["Curso"]["id"]]);?> 
+			 <?php 
+			 echo $this->Form->postlink('Eliminar', ['action' => 'eliminar', $curso['Curso']['id']], 
+			 ['confirm' => '¿Estás seguro de eliminar el curso ' . $curso['Curso']['descripcion'] . "?"]);?>
+			
+		</td>
         </tr>
     <?php
 

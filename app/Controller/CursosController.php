@@ -21,5 +21,9 @@ class CursosController extends AppController{
             $this->Flash->set("No se pudo crear el curso");
         }
     }
+	
+	function editar(){
+		
+	}
 }
 ?>
