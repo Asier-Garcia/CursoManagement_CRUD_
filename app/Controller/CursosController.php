@@ -11,17 +11,52 @@ class CursosController extends AppController{
         $this->set('cursos', $cursos);
     }
 
+    function añadir($id = null){
+
+        if ($this->request->is('post')) {
+			$this->Curso->create();
+			if ($this->Curso->save($this->request->data)) {
+				$this->Flash->success('El alumno se añadió correctamente');
+				return $this->redirect(array('action' => 'index'));
+			} else {
+				$this->Flash->set('El alumno no se pudo añadir');
+			}
+		}
+		$alumnos = $this->Curso->Alumno->find('list', array('fields' => 'Alumno.nombre'));
+        
+		$this->set(compact('alumnos'));
+
+    }
+
+    function eliminar($id = null){
+        if(!$id){
+            throw new NotFoundException('Datos incorrectos');
+        }
+        if($this->request->is('get')){
+            throw new NotFoundException('No te pases de listo');
+        }
+        if($this->Curso->delete($id)){
+            $this->Flash->success('El curso ha sido eliminado');
+            
+            return $this->redirect(['action' => 'index']);
+        }
+    }
+
     function nuevo(){
         if($this->request->is('post')){
 
-            $this->Curso->create();
+            $this->set(compact('alumnos'));
             //var_dump($this->request->data);
             if($this->Curso->save($this->request->data)){
                 $this->Flash->success("Curso creado con éxito");
                 return $this -> redirect(array('action' => 'index'));
+            }else{
+                $this->Flash->set("No se pudo crear el curso");
             }
 
-            $this->Flash->set("No se pudo crear el curso");
+            $this->Curso->create();
+            $alumnos = $this->Curso->Alumno->find('list', array('fields' => 'Alumno.nombre'));
+            
         }
     }
 	

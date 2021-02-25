@@ -3,7 +3,9 @@
         public $hasAndBelongsToMany = [
             'Alumno' => [
                 'class' => 'Alumno' ,
-                'foreignKey' => 'curso_id', 
+                'joinTable' => 'alumnos_cursos',
+                'foreignKey' => 'curso_id',
+                'associationForeignKey' => 'alumno_id',
                 'conditions' => '', 
                 'order' => '', 
                 'depend' => false

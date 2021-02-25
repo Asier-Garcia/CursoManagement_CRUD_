@@ -30,7 +30,9 @@ class Alumno extends AppModel{
     public $hasAndBelongsToMany = [
         'Curso' => [
             'className' => 'Curso',
+            'joinTable' => 'alumnos_cursos',
             'foreignKey' => 'alumno_id',
+            'associationForeignKey' => 'curso_id',
             'conditions' => '', 
             'order' => 'Curso.fecha_inicio ASC', 
             'depend' => false

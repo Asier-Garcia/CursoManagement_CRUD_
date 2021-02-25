@@ -1,5 +1,13 @@
 <h2>Listado de cursos</h2>
-<?php echo $this->Html->link("Crear Curso", array('controller' => 'cursos', 'action' => 'nuevo' )); ?>
+
+<?php 
+    echo $this->Html->link("Crear Curso", array('controller' => 'cursos', 'action' => 'nuevo' )); 
+?><br/>
+<?php 
+    echo $this->Html->link("Alumnos", array('controller' => 'alumnos', 'action' => 'index' )); 
+?><br/>
+
+
 <table>
 <tr>
     <td>Nombre</td>
@@ -31,11 +39,11 @@
 		<td>
 		
 			<?php echo $this->Html->link("Editar", ["controller" => "cursos", "action" => "editar", $curso["Curso"]["id"]]);?> 
-			 <?php 
+			<?php 
 			 echo $this->Form->postlink('Eliminar', ['action' => 'eliminar', $curso['Curso']['id']], 
 			 ['confirm' => '¿Estás seguro de eliminar el curso ' . $curso['Curso']['descripcion'] . "?"]);?>
 			 <?php
-			 echo $this->Html->link("Añadir alumno", array('controller' => 'cursos', 'action' => 'añadir' ));?>
+			 echo $this->Html->link("Añadir alumno", array('controller' => 'cursos', 'action' => 'añadir', $curso["Curso"]["id"] ));?>
 			
 		</td>
         </tr>

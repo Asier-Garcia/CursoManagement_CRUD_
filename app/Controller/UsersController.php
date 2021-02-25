@@ -5,7 +5,7 @@ App::uses('AppController', 'Controller');
 class UsersController extends AppController {
 	public $helpers = array('Html', 'Form', 'Time');
 	public $components = array('Auth');
-	$this->loadModel('AppModel');
+	//$this->loadModel('AppModel');
 	
     public function beforeFilter()
     {
@@ -13,11 +13,10 @@ class UsersController extends AppController {
         //$this->Auth->allow('add'); //error alow() on null si no inicializas line 5
     }
 
-
     public function login(){
 		
         if ($this->request->is('post')) {
-            debug($this->Auth->login());
+            //debug($this->Auth->login());
             
 			if ($this->Auth->login()) { //$this->Auth->login()
 				return $this->redirect($this->Auth->redirectUrl());
@@ -55,9 +54,7 @@ class UsersController extends AppController {
 
         
         
-    }
-
-	
+    }	
 
 }
 

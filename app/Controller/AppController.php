@@ -58,7 +58,7 @@ class AppController extends Controller {
 		
         $this->Auth->allow('login', 'editar');
         //$this->set('current_user', $this -> Auth -> user());
-    }
-    */
+    }*/
+    
 
 }

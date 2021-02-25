@@ -12,9 +12,13 @@ documentación para la evaluación, y además poder indicar el resultado (no apt
 <h2>Lista de alumnos</h2>
 <?php 
     
-    echo $this->Html->link("Crear Alumno", array('controller' => 'alumnos', 'action' => 'nuevo' ));
-    echo $this->Html->link("Crear Curso", array('controller' => 'cursos', 'action' => 'nuevo' ));
-    echo $this->Html->link("Editar Contraseña", array('controller' => 'users', 'action' => 'editar', "1" ));
+    echo $this->Html->link("Crear Alumno", array('controller' => 'alumnos', 'action' => 'nuevo' )); ?> <br/>
+<?php 
+    
+    echo $this->Html->link("Cursos", array('controller' => 'cursos', 'action' => 'index' )); ?> <br/>
+<?php
+    echo $this->Html->link("Editar Contraseña", array('controller' => 'users', 'action' => 'editar', "1" ));?> <br/>
+<?php
     echo $this->Html->link("Salir", array('controller' => 'users', 'action' => 'logout' ));
 
 ?>
