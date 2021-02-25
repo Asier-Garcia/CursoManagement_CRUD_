@@ -14,7 +14,8 @@ class CursosController extends AppController{
     function añadir($id = null){
 
         if ($this->request->is('post')) {
-			$this->Curso->create();
+            //$this->Curso->create();
+            $this->Curso->id = $id;
 			if ($this->Curso->save($this->request->data)) {
 				$this->Flash->success('El alumno se añadió correctamente');
 				return $this->redirect(array('action' => 'index'));
@@ -53,9 +54,6 @@ class CursosController extends AppController{
             }else{
                 $this->Flash->set("No se pudo crear el curso");
             }
-
-            $this->Curso->create();
-            $alumnos = $this->Curso->Alumno->find('list', array('fields' => 'Alumno.nombre'));
             
         }
     }
