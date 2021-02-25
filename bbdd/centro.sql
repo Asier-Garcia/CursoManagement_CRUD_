@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-02-2021 a las 13:45:38
+-- Tiempo de generación: 25-02-2021 a las 13:43:38
 -- Versión del servidor: 10.4.17-MariaDB
 -- Versión de PHP: 7.3.27
 
@@ -43,10 +43,10 @@ CREATE TABLE `alumnos` (
 --
 
 INSERT INTO `alumnos` (`id`, `dni`, `nombre`, `apellido`, `telefono`, `email`, `created`, `modified`) VALUES
-(1, 123123123, 'Julian ', 'López', 666666666, 'julianlopez@gmail.com', '2021-02-23 11:10:47', '2021-02-23 11:10:47'),
 (2, 123121211, 'Asier', 'Garcia', 2147483647, 'asier98garcia@gmail.com', '2021-02-23 12:59:28', '2021-02-23 13:01:12'),
 (3, 12311111, 'Sara', 'Contreras', 23423423, 'sara@gma.com', '2021-02-23 20:17:07', '2021-02-23 20:17:07'),
-(4, 234234, 'Érika', 'García', 45464564, 'e@e.com', '2021-02-23 20:17:30', '2021-02-23 20:17:30');
+(4, 2342341, 'Érika', 'García', 45464564, 'e@e.com', '2021-02-23 20:17:30', '2021-02-25 10:40:18'),
+(5, 12312331, 'Juliana', 'López', 12313412, 'julianlopez@gmail.com', '2021-02-25 10:40:42', '2021-02-25 13:28:28');
 
 -- --------------------------------------------------------
 
@@ -64,11 +64,8 @@ CREATE TABLE `alumnos_cursos` (
 --
 
 INSERT INTO `alumnos_cursos` (`alumno_id`, `curso_id`) VALUES
-(1, 1),
-(1, 2),
 (2, 1),
 (2, 2),
-(1, 3),
 (3, 1),
 (3, 3),
 (4, 3);
@@ -95,15 +92,16 @@ CREATE TABLE `cursos` (
 INSERT INTO `cursos` (`id`, `dificultad`, `descripcion`, `horas`, `fecha_inicio`, `fecha_fin`) VALUES
 (1, 'fácil', 'Matemáticas', 5, '2021-02-23 18:13:22', '2021-02-28 18:13:22'),
 (2, 'difícil', 'Latin', 12, '2021-03-01 18:17:53', '2021-03-24 18:17:53'),
-(3, 'Muy fácil', 'Informática', 30, '2021-02-27 19:08:26', '2021-03-02 19:08:26');
+(3, 'Muy fácil', 'Informática', 30, '2021-02-27 19:08:26', '2021-03-02 19:08:26'),
+(4, 'se', 'se', 3, '2021-02-25 10:40:00', '2021-02-28 10:40:00');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuarios`
+-- Estructura de tabla para la tabla `users`
 --
 
-CREATE TABLE `usuarios` (
+CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `username` varchar(20) NOT NULL,
   `password` varchar(255) NOT NULL,
@@ -113,11 +111,13 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `usuarios`
+-- Volcado de datos para la tabla `users`
 --
 
-INSERT INTO `usuarios` (`id`, `username`, `password`, `role`, `created`, `modifed`) VALUES
-(1, 'admin', '1234', 'admin', '2021-02-24 13:03:12', NULL);
+INSERT INTO `users` (`id`, `username`, `password`, `role`, `created`, `modifed`) VALUES
+(1, 'admin', '$2a$10$YeXD4KQqLC8duRRwzrODAOe89WprvgGPQFYo9tL5jeJCuOHIJXYai', 'admin', '2021-02-24 13:03:12', NULL),
+(3, 'asier', '$2a$10$X2q20puTCCGD4P37rBnkLe4OvhFnNiFYC6befvw0wTyBbvCdDBMCq', 'admin', '2021-02-25 12:14:11', NULL),
+(4, 'as', '$2a$10$5wMfhzh5Vm/dcK6M/EvUC.6MtlG/27Xs/lO40.FnlnZWp9Cp4rqAm', 'admin', '2021-02-25 12:44:41', NULL);
 
 --
 -- Índices para tablas volcadas
@@ -136,9 +136,9 @@ ALTER TABLE `cursos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `usuarios`
+-- Indices de la tabla `users`
 --
-ALTER TABLE `usuarios`
+ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -149,19 +149,19 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `alumnos`
 --
 ALTER TABLE `alumnos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `cursos`
 --
 ALTER TABLE `cursos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT de la tabla `usuarios`
+-- AUTO_INCREMENT de la tabla `users`
 --
-ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

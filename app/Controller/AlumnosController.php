@@ -1,7 +1,8 @@
 <?php
 class AlumnosController extends AppController{
     public $helpers = array('Html', 'Form', 'Time');
-
+	//public $components = array('Auth');
+	
     public function index(){ //se las llama acciones
         //en la variable alumnos guarda todos los registros de la tabla alumno
 		$this->Alumno->recursive = 1;

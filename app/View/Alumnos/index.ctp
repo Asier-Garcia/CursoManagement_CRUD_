@@ -11,7 +11,7 @@ documentación para la evaluación, y además poder indicar el resultado (no apt
 
 <h2>Lista de alumnos</h2>
 <?php 
-    var_dump($current_user);
+    
     echo $this->Html->link("Crear Alumno", array('controller' => 'alumnos', 'action' => 'nuevo' ));
     echo $this->Html->link("Crear Curso", array('controller' => 'cursos', 'action' => 'nuevo' ));
     echo $this->Html->link("Editar Contraseña", array('controller' => 'users', 'action' => 'editar', "1" ));
@@ -35,6 +35,7 @@ documentación para la evaluación, y además poder indicar el resultado (no apt
         <td><?php echo $alumno['Alumno']['apellido'];?></td>
         <td>
         <?php foreach($alumno['Curso'] as $curso){
+			//si el alumno tiene entregada la documentación que el nombre del curso cambie de color(campo entregado en alumnos_cursos)
             echo $curso['descripcion'] . ", ";
          }?>
         </td>
@@ -42,6 +43,7 @@ documentación para la evaluación, y además poder indicar el resultado (no apt
             <?php echo $this->Html->link('Detalles', 
             array('controller' => 'alumnos', 'action' => 'ver', 
             $alumno['Alumno']['id']));?>
+			<?php ?>
         </td>
         <td>
             <?php echo $this->Html->link('Editar', 

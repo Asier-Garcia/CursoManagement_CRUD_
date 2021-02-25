@@ -19,7 +19,7 @@
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
 
-App::uses('Controller', 'Controller');
+//App::uses('Controller', 'Controller');
 
 /**
  * Application Controller
@@ -32,14 +32,9 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
-    public function initialize(){
-        $this->loadComponent('Flash');
-    }
-
-    public $components = array(
-        'Session',
+    /*public $components = array(
+        'Session', "Flash",
         'Auth' => array(
-            
             'loginRedirect' => array(
                 'controller' => 'alumnos',
                 'action' => 'index'
@@ -50,19 +45,20 @@ class AppController extends Controller {
             ),
             'authenticate' => array(
                 'Form' => array(
-                    'userModel' => 'User',
-                    'passwordHasher' => 'Blowfish'
+                    'passwordHasher' => 'Blowfish', 
+					'fields' => array('username' => 'username', 'password' => 'password')
                 )
-            ) 
-            //'authorize' => 'Controller'
+            ),
+            //'authorize' => array('Controller')
             //'authError' => false
         )
     );
 
     public function beforeFilter() {
-        $this->Auth->allow('login', 'logout');
-        $this->set('current_user', $this -> Auth -> user());
+		
+        $this->Auth->allow('login', 'editar');
+        //$this->set('current_user', $this -> Auth -> user());
     }
-    
+    */
 
 }

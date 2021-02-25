@@ -1,4 +1,5 @@
 <h2>Listado de cursos</h2>
+<?php echo $this->Html->link("Crear Curso", array('controller' => 'cursos', 'action' => 'nuevo' )); ?>
 <table>
 <tr>
     <td>Nombre</td>
@@ -24,7 +25,7 @@
             foreach($curso['Alumno'] as $alumno){
                 echo $alumno['nombre'] . " " .  $alumno['apellido'] . ", ";
             }
-                
+             
         ?>
         </td>
 		<td>
@@ -33,6 +34,8 @@
 			 <?php 
 			 echo $this->Form->postlink('Eliminar', ['action' => 'eliminar', $curso['Curso']['id']], 
 			 ['confirm' => '¿Estás seguro de eliminar el curso ' . $curso['Curso']['descripcion'] . "?"]);?>
+			 <?php
+			 echo $this->Html->link("Añadir alumno", array('controller' => 'cursos', 'action' => 'añadir' ));?>
 			
 		</td>
         </tr>

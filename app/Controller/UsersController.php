@@ -1,25 +1,30 @@
 <?php 
 
-class UsersController extends AppController {
+App::uses('AppController', 'Controller');
 
+class UsersController extends AppController {
+	public $helpers = array('Html', 'Form', 'Time');
+	public $components = array('Auth');
+	$this->loadModel('AppModel');
+	
     public function beforeFilter()
     {
         parent::beforeFilter();
-        $this->Auth->allow('add');
+        //$this->Auth->allow('add'); //error alow() on null si no inicializas line 5
     }
 
 
     public function login(){
-
+		
         if ($this->request->is('post')) {
-            $user = "";
-            $pass = "";
-            var_dump($this->request->data);
-			if ($this->Auth->login()) {
-                
+            debug($this->Auth->login());
+            
+			if ($this->Auth->login()) { //$this->Auth->login()
 				return $this->redirect($this->Auth->redirectUrl());
 			}
+			
 			$this->Flash->set('User o contraseña incorrectos, vuelve a intentarlo');
+			
 		}
 
     }
