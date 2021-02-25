@@ -7,15 +7,15 @@ mismo dni, se debe recuperar su información y permitir modificar algún dato en
 - Cuando el curso finaliza (según su fecha de fin) se debe poder marcar que ha entregado la
 documentación para la evaluación, y además poder indicar el resultado (no apto, aprobado).
 
-- El acceso a este administrador debe estar protegido por usuario y contraseña. El propio
-usuario debe poder modificar su contraseña de acceso.
-
 -->
 
 <h2>Lista de alumnos</h2>
 <?php 
+    var_dump($current_user);
     echo $this->Html->link("Crear Alumno", array('controller' => 'alumnos', 'action' => 'nuevo' ));
     echo $this->Html->link("Crear Curso", array('controller' => 'cursos', 'action' => 'nuevo' ));
+    echo $this->Html->link("Editar Contraseña", array('controller' => 'users', 'action' => 'editar', "1" ));
+    echo $this->Html->link("Salir", array('controller' => 'users', 'action' => 'logout' ));
 
 ?>
 <table>

@@ -52,7 +52,7 @@ class AlumnosController extends AppController{
         }
 
         if($this->request->is(array('post', 'put'))){
-            $this->Alumno->id = $id; //****************************************
+            $this->Alumno->id = $id; //para identificar que usuario editar si no pasaría como en admin que crea otro con los datos proporcionados****************************************
             
             if($this->Alumno->save($this->request->data)){
                 $this->Flash->success('El alumno ha sido modificado');

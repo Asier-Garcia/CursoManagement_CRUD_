@@ -1,6 +1,7 @@
 <?php 
 class CursosController extends AppController{
     public $helpers = ['Html','Form'];
+    //$this->loadModel('Curso');
 
     function index(){
         $this->Curso->recursive = 1;
@@ -13,6 +14,7 @@ class CursosController extends AppController{
         if($this->request->is('post')){
 
             $this->Curso->create();
+            //var_dump($this->request->data);
             if($this->Curso->save($this->request->data)){
                 $this->Flash->success("Curso creado con éxito");
                 return $this -> redirect(array('action' => 'index'));
@@ -26,4 +28,6 @@ class CursosController extends AppController{
 		
 	}
 }
+
+
 ?>
