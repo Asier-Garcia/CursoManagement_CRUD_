@@ -149,3 +149,523 @@ Stack Trace:
 #4 C:\xampp\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
 #5 C:\xampp\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2021-02-24 18:48:16 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /Asier/Curso_Management/login
+Stack Trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-02-24 18:48:22 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /Asier/Curso_Management/index
+Stack Trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-02-24 18:48:44 Error: [Error] Call to a member function login() on null
+Request URL: /Asier/Curso_Management/usuarios
+Stack Trace:
+#0 [internal function]: UsuariosController->index()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 18:49:14 Error: [Error] Call to a member function login() on null
+Request URL: /Asier/Curso_Management/usuarios
+Stack Trace:
+#0 [internal function]: UsuariosController->index()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 18:57:04 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Asier/Curso_Management/users/login
+Stack Trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-02-24 18:59:26 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Asier/Curso_Management/users/login
+Stack Trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-02-24 18:59:54 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Asier/Curso_Management/users/login
+Stack Trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-02-24 19:00:29 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Asier/Curso_Management/users/login
+Stack Trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-02-24 19:02:12 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Asier/Curso_Management/users/login
+Stack Trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-02-24 19:03:26 Error: [Error] Call to a member function allow() on null
+Request URL: /Asier/Curso_Management/usuarios
+Stack Trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Event\CakeEventManager.php(244): AppController->beforeFilter(Object(CakeEvent))
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(682): CakeEventManager->dispatch(Object(CakeEvent))
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 19:03:26 Error: Fatal Error (1): Uncaught Error: Call to a member function allow() on null in D:\xampp_\htdocs\Asier\Curso_Management\app\Controller\AppController.php:38
+Stack trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Event\CakeEventManager.php(244): AppController->beforeFilter(Object(CakeEvent))
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(682): CakeEventManager->dispatch(Object(CakeEvent))
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Error\ExceptionRenderer.php(158): Controller->startupProcess()
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Error\ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(Error))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Error\ErrorHandler.php(126): ExceptionRenderer->__construct(Object(Error))
+#5 [internal function]: ErrorHandler::handleException(Object(Error))
+#6 {main}
+  thrown in [D:\xampp_\htdocs\Asier\Curso_Management\app\Controller\AppController.php, line 38]
+2021-02-24 19:03:26 Error: [FatalErrorException] Uncaught Error: Call to a member function allow() on null in D:\xampp_\htdocs\Asier\Curso_Management\app\Controller\AppController.php:38
+Stack trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Event\CakeEventManager.php(244): AppController->beforeFilter(Object(CakeEvent))
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(682): CakeEventManager->dispatch(Object(CakeEvent))
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Error\ExceptionRenderer.php(158): Controller->startupProcess()
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Error\ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(Error))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Error\ErrorHandler.php(126): ExceptionRenderer->__construct(Object(Error))
+#5 [internal function]: ErrorHandler::handleException(Object(Error))
+#6 {main}
+  thrown
+Request URL: /Asier/Curso_Management/usuarios
+Stack Trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', 'D:\\xampp_\\htdoc...', 38)
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Core\App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', 'D:\\xampp_\\htdoc...', 38, Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2021-02-24 19:26:42 Error: [NotFoundException] User incorrecto
+Request URL: /Asier/Curso_Management/users/editar
+Stack Trace:
+#0 [internal function]: UsersController->editar()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 19:27:23 Error: [NotFoundException] User incorrecto
+Request URL: /Asier/Curso_Management/users/editar
+Stack Trace:
+#0 [internal function]: UsersController->editar()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 19:28:07 Error: [NotFoundException] User incorrecto
+Request URL: /Asier/Curso_Management/users/editar
+Stack Trace:
+#0 [internal function]: UsersController->editar()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 19:33:26 Error: [NotFoundException] Datos incorrectos
+Request URL: /Asier/Curso_Management/users/editar
+Stack Trace:
+#0 [internal function]: UsersController->editar()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 19:33:57 Error: [NotFoundException] Datos incorrectos
+Request URL: /Asier/Curso_Management/users/editar
+Stack Trace:
+#0 [internal function]: UsersController->editar()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 19:33:58 Error: [NotFoundException] Datos incorrectos
+Request URL: /Asier/Curso_Management/users/editar
+Stack Trace:
+#0 [internal function]: UsersController->editar()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 19:33:59 Error: [NotFoundException] Datos incorrectos
+Request URL: /Asier/Curso_Management/users/editar
+Stack Trace:
+#0 [internal function]: UsersController->editar()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 19:33:59 Error: [NotFoundException] Datos incorrectos
+Request URL: /Asier/Curso_Management/users/editar
+Stack Trace:
+#0 [internal function]: UsersController->editar()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 19:34:00 Error: [NotFoundException] Datos incorrectos
+Request URL: /Asier/Curso_Management/users/editar
+Stack Trace:
+#0 [internal function]: UsersController->editar()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 19:43:23 Error: [MissingControllerException] Controller class AlumnoController could not be found.
+Exception Attributes: array (
+  'class' => 'AlumnoController',
+  'plugin' => NULL,
+)
+Request URL: /Asier/Curso_Management/Alumno
+Stack Trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-02-24 20:04:19 Error: [Error] Call to a member function login() on null
+Request URL: /Asier/Curso_Management/
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 20:05:11 Error: [Error] Call to a member function login() on null
+Request URL: /Asier/Curso_Management/
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 20:22:47 Error: [Error] Call to a member function set() on null
+Request URL: /Asier/Curso_Management/
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 20:23:06 Error: [Error] Call to a member function set() on null
+Request URL: /Asier/Curso_Management/
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 20:39:25 Error: [Error] Call to a member function set() on null
+Request URL: /Asier/Curso_Management/
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 20:39:52 Error: [Error] Call to a member function set() on null
+Request URL: /Asier/Curso_Management/
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 20:39:59 Error: [Error] Call to a member function set() on null
+Request URL: /Asier/Curso_Management/
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 20:40:30 Error: [Error] Call to a member function set() on null
+Request URL: /Asier/Curso_Management/
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 20:48:11 Error: [CakeException] $controller does not implement an isAuthorized() method.
+Request URL: /Asier/Curso_Management/alumnos
+Stack Trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Component\Auth\BaseAuthorize.php(72): ControllerAuthorize->controller(Object(AlumnosController))
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Component\AuthComponent.php(505): BaseAuthorize->__construct(Object(ComponentCollection), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Component\AuthComponent.php(467): AuthComponent->constructAuthorize()
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Component\AuthComponent.php(311): AuthComponent->isAuthorized(Array)
+#4 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Utility\ObjectCollection.php(129): AuthComponent->startup(Object(AlumnosController))
+#5 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Event\CakeEventManager.php(244): ObjectCollection->trigger('startup')
+#6 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(683): CakeEventManager->dispatch(Object(CakeEvent))
+#7 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#8 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
+#9 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2021-02-24 20:50:35 Error: [CakeException] $controller does not implement an isAuthorized() method.
+Request URL: /Asier/Curso_Management/alumnos
+Stack Trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Component\Auth\BaseAuthorize.php(72): ControllerAuthorize->controller(Object(AlumnosController))
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Component\AuthComponent.php(505): BaseAuthorize->__construct(Object(ComponentCollection), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Component\AuthComponent.php(467): AuthComponent->constructAuthorize()
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Component\AuthComponent.php(311): AuthComponent->isAuthorized(Array)
+#4 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Utility\ObjectCollection.php(129): AuthComponent->startup(Object(AlumnosController))
+#5 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Event\CakeEventManager.php(244): ObjectCollection->trigger('startup')
+#6 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(683): CakeEventManager->dispatch(Object(CakeEvent))
+#7 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#8 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
+#9 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2021-02-24 20:54:06 Error: [MissingControllerException] Controller class AsierController could not be found.
+Exception Attributes: array (
+  'class' => 'AsierController',
+  'plugin' => NULL,
+)
+Request URL: /Asier/Curso_Management/Asier/Curso_Management/alumnos
+Stack Trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-02-24 20:54:30 Error: [MissingControllerException] Controller class AsierController could not be found.
+Exception Attributes: array (
+  'class' => 'AsierController',
+  'plugin' => NULL,
+)
+Request URL: /Asier/Curso_Management/Asier/Curso_Management/alumnos
+Stack Trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-02-24 21:05:27 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND `User`.`password` = ''    LIMIT 1' at line 1
+Request URL: /Asier/Curso_Management/
+Stack Trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `User`.`...', Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `User`.`...', Array)
+#4 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Model.php(3053): DboSource->read(Object(User), Array)
+#5 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Model.php(3025): Model->_readDataSource('first', Array)
+#6 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(636): Model->find('first', Array)
+#7 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Model.php(834): DboSource->query('findByUsernameA...', Array, Object(User))
+#8 D:\xampp_\htdocs\Asier\Curso_Management\app\Controller\UsersController.php(17): Model->__call('findByUsernameA...', Array)
+#9 [internal function]: UsersController->login()
+#10 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2021-02-24 21:05:35 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND `User`.`password` = ''    LIMIT 1' at line 1
+Request URL: /Asier/Curso_Management/
+Stack Trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `User`.`...', Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `User`.`...', Array)
+#4 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Model.php(3053): DboSource->read(Object(User), Array)
+#5 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Model.php(3025): Model->_readDataSource('first', Array)
+#6 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(636): Model->find('first', Array)
+#7 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Model.php(834): DboSource->query('findByUsernameA...', Array, Object(User))
+#8 D:\xampp_\htdocs\Asier\Curso_Management\app\Controller\UsersController.php(17): Model->__call('findByUsernameA...', Array)
+#9 [internal function]: UsersController->login()
+#10 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2021-02-24 21:05:40 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND `User`.`password` = ''    LIMIT 1' at line 1
+Request URL: /Asier/Curso_Management/
+Stack Trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `User`.`...', Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `User`.`...', Array)
+#4 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Model.php(3053): DboSource->read(Object(User), Array)
+#5 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Model.php(3025): Model->_readDataSource('first', Array)
+#6 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(636): Model->find('first', Array)
+#7 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Model.php(834): DboSource->query('findByUsernameA...', Array, Object(User))
+#8 D:\xampp_\htdocs\Asier\Curso_Management\app\Controller\UsersController.php(17): Model->__call('findByUsernameA...', Array)
+#9 [internal function]: UsersController->login()
+#10 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2021-02-24 21:05:47 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND `User`.`password` = ''    LIMIT 1' at line 1
+Request URL: /Asier/Curso_Management/
+Stack Trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `User`.`...', Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `User`.`...', Array)
+#4 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Model.php(3053): DboSource->read(Object(User), Array)
+#5 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Model.php(3025): Model->_readDataSource('first', Array)
+#6 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Datasource\DboSource.php(636): Model->find('first', Array)
+#7 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Model\Model.php(834): DboSource->query('findByUsernameA...', Array, Object(User))
+#8 D:\xampp_\htdocs\Asier\Curso_Management\app\Controller\UsersController.php(17): Model->__call('findByUsernameA...', Array)
+#9 [internal function]: UsersController->login()
+#10 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2021-02-24 22:58:52 Error: [Error] Call to a member function set() on null
+Request URL: /Asier/Curso_Management/
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 23:00:58 Error: [Error] Call to a member function success() on null
+Request URL: /Asier/Curso_Management/cursos/nuevo
+Stack Trace:
+#0 [internal function]: CursosController->nuevo()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(CursosController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 23:01:05 Error: [Error] Call to a member function success() on null
+Request URL: /Asier/Curso_Management/cursos/nuevo
+Stack Trace:
+#0 [internal function]: CursosController->nuevo()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(CursosController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 23:01:20 Error: [Error] Call to a member function success() on null
+Request URL: /Asier/Curso_Management/cursos/nuevo
+Stack Trace:
+#0 [internal function]: CursosController->nuevo()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(CursosController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 23:03:16 Error: [Error] Call to a member function success() on null
+Request URL: /Asier/Curso_Management/cursos/nuevo
+Stack Trace:
+#0 [internal function]: CursosController->nuevo()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(CursosController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 23:04:03 Error: [Error] Call to a member function success() on null
+Request URL: /Asier/Curso_Management/cursos/nuevo
+Stack Trace:
+#0 [internal function]: CursosController->nuevo()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(CursosController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 23:05:28 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /Asier/Curso_Management/cursos/nuevo
+Stack Trace:
+#0 [internal function]: App::load('CursosControlle...')
+#1 [internal function]: spl_autoload_call('CursosControlle...')
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(266): class_exists('CursosControlle...')
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-02-24 23:05:54 Error: [Error] Call to a member function success() on null
+Request URL: /Asier/Curso_Management/users/editar/1
+Stack Trace:
+#0 [internal function]: UsersController->editar('1')
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 23:08:07 Error: [Error] Call to a member function success() on null
+Request URL: /Asier/Curso_Management/alumnos/eliminar/1
+Stack Trace:
+#0 [internal function]: AlumnosController->eliminar('1')
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(AlumnosController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 23:09:02 Error: [MissingViewException] View file "Alumnos\eliminar.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Alumnos\\eliminar.ctp',
+)
+Request URL: /Asier/Curso_Management/alumnos/eliminar/1
+Stack Trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\View\View.php(470): View->_getViewFileName('Alumnos\\elimina...')
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 23:09:16 Error: [Error] Call to a member function success() on null
+Request URL: /Asier/Curso_Management/alumnos/nuevo
+Stack Trace:
+#0 [internal function]: AlumnosController->nuevo()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(AlumnosController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 23:11:11 Error: [Error] Call to a member function success() on null
+Request URL: /Asier/Curso_Management/cursos/nuevo
+Stack Trace:
+#0 [internal function]: CursosController->nuevo()
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(CursosController), Array)
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-02-24 23:11:27 Error: [MissingActionException] Action CursosController::eliminar() could not be found.
+Exception Attributes: array (
+  'controller' => 'CursosController',
+  'action' => 'eliminar',
+)
+Request URL: /Asier/Curso_Management/cursos/eliminar/10
+Stack Trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#2 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
