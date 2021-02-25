@@ -963,3 +963,115 @@ Request URL: /Asier/Curso_Management/curso/nuevo
 Stack Trace:
 #0 C:\xampp\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2021-02-25 17:20:33 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /Asier/Curso_Management/
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-02-25 17:23:28 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /Asier/Curso_Management/users/logout
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-02-25 17:30:53 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /Asier/Curso_Management/
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-02-25 17:30:57 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /Asier/Curso_Management/
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-02-25 17:31:01 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /Asier/Curso_Management/
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-02-25 17:37:24 Error: [MissingActionException] Action CursosController::añadir() could not be found.
+Exception Attributes: array (
+  'controller' => 'CursosController',
+  'action' => 'añadir',
+)
+Request URL: /Asier/Curso_Management/cursos/a%C3%B1adir/1
+Stack Trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#2 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-02-25 18:12:09 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /Asier/Curso_Management/cursos/a%C3%B1adir/1
+Stack Trace:
+#0 [internal function]: App::load('CursosControlle...')
+#1 [internal function]: spl_autoload_call('CursosControlle...')
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(266): class_exists('CursosControlle...')
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-02-25 18:12:32 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /Asier/Curso_Management/cursos/a%C3%B1adir/1
+Stack Trace:
+#0 [internal function]: App::load('CursosControlle...')
+#1 [internal function]: spl_autoload_call('CursosControlle...')
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(266): class_exists('CursosControlle...')
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-02-25 18:12:33 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /Asier/Curso_Management/cursos/a%C3%B1adir/1
+Stack Trace:
+#0 [internal function]: App::load('CursosControlle...')
+#1 [internal function]: spl_autoload_call('CursosControlle...')
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(266): class_exists('CursosControlle...')
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-02-25 18:33:58 Error: [MissingActionException] Action CursosController::eliminar() could not be found.
+Exception Attributes: array (
+  'controller' => 'CursosController',
+  'action' => 'eliminar',
+)
+Request URL: /Asier/Curso_Management/cursos/eliminar/5
+Stack Trace:
+#0 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#2 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-02-25 18:35:00 Error: [ParseError] syntax error, unexpected '}', expecting end of file
+Request URL: /Asier/Curso_Management/cursos/
+Stack Trace:
+#0 [internal function]: App::load('CursosControlle...')
+#1 [internal function]: spl_autoload_call('CursosControlle...')
+#2 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(266): class_exists('CursosControlle...')
+#3 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 D:\xampp_\htdocs\Asier\Curso_Management\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 D:\xampp_\htdocs\Asier\Curso_Management\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
