@@ -1,3 +1,8 @@
+# TODO: Login doesn't work
+To use the app you have to skip the login and go directly to the "alumnos" list.
+
+
+
 # CakePHP
 
 [![Latest Stable Version](https://poser.pugx.org/cakephp/cakephp/v/stable.svg)](https://packagist.org/packages/cakephp/cakephp)
